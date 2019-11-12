@@ -1,0 +1,22 @@
+.square {
+    background-color: red;
+    border: 5px dashed black;
+    height: 100px;
+    width: 100px;
+    position: relative; top:200px;
+}
+
+.circle {
+    background-color: green;
+    border: 5px dashed black;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    position: relative;
+}
+
+input {
+    height: 25px;
+    border-radius: 5px;
+
+}
