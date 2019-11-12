@@ -3,8 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <title>My Website</title>
+        <style>
+            body {
+                font-family:Arial, Helvetica, sans-serif;
+            }
+
+            h2 {
+                color:red; 
+            }
+        
+        </style>
+        <link rel="stylesheet" href="styles.css">
+        
+
+
     </head>
-    <body style="background-image:url('img/background.jpg')">
+    <body >
         <header>
                 <a name="top"></a>
                 <h1>My awesome website</h1>
@@ -13,13 +27,13 @@
         </header>
 
         <section>
-            <h2>Text Sample:</h2>
+            <h2 id="firstH2">Text Sample:</h2>
             <p>Welcome to my <b>awesome</b> website! <br/>
              This is a very <em>nice</em> and <strike>perfect</strike> website.</p>
         </section>
         <article>
             <div>
-                <h2>List sample</h2>
+                <h2 class="redH2 fontTimes">List sample</h2>
             <ol>
                  <li>First Entry</li>
                 <li>Second Entry</li>
@@ -33,7 +47,7 @@
         </article>
 
         <article>
-            <h2>Image sample</h2>
+            <h2 class="redH2">Image sample</h2>
             <img src="img/cat.jpeg" alt="Here should be a cat">
             <img width="280px" src="https://media14.s-nbcnews.com/j/MSNBC/Components/Video/201905/tdy_news_grumpy_cat_190517_1920x1080.760;428;7;70;5.jpg">
         </article>
@@ -100,7 +114,6 @@
             <h2>Media (Videos & Audio)</h2>
             <audio src="media/media.mp3"  controls></audio>
             <video src="media/timelapse.mov" style="width: 200px;"  controls></video>
-
         </section>
 
 
