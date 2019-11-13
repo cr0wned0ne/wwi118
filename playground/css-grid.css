@@ -1,0 +1,27 @@
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 100px auto ;
+    grid-template-rows: 50px 200px 20px;
+}
+
+.headerBar {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.footerBar {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.leftMenu {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.grid-item {
+    background-color: lightblue;
+    border: 1px solid indigo;
+}
