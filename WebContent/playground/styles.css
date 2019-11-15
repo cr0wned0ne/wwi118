@@ -1,0 +1,21 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-image:url('img/background.jpg');
+}
+
+h2 {
+    color:green; 
+    background-color: black;
+}
+
+#firstH2 {
+    color: rgb(103, 226, 21);
+}
+
+.redH2 {
+    color: rgba(148, 88, 88, 0.452);
+}
+
+.fontTimes {
+    font-family: 'Times New Roman', Times, serif;
+}

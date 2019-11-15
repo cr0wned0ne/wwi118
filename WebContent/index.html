@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WWI118</title>
+        <link rel="stylesheet" media="screen" href="style.css">
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="grid-item headerBar"><h1>WWI118 Advendskalender</h1></div>
+            <div class="grid-item leftMenu">2</div>
+            <div class="grid-item flex-container content">
+                <div class="flex-item">
+                    Message:
+                    <input id="message" type="text">
+                    <button id="send">Send</button>
+
+
+                </div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+                <div class="flex-item">4</div>
+                <div class="flex-item">5</div>
+                <div class="flex-item">6</div>
+                <div class="flex-item">7</div>
+                <div class="flex-item">8</div>
+                <div class="flex-item">9</div>
+                <div class="flex-item">10</div>
+                <div class="flex-item">...</div>
+
+            </div>
+            <div class="grid-item footerBar"><p>© wwi118</p></div>
+
+            <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+            <script>
+
+            $(document).ready( function() {
+                $('#send').on("click", function() {
+                    $.post(
+                    '/wwi118/hello-world',
+                    {
+                        message : $("#message").val()
+                    },
+                    function(result) {
+                        console.log("worked!");
+                    }
+                )
+                })
+            })
+
+  
+            
+            </script>
+        </div>
+    </body>
+
+</html>

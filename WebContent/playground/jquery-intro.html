@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1 {
+                color:blueviolet;
+            }
+        </style>
+
+    </head>
+<body>
+    <h1>Hello jQuery</h1>
+
+
+    <div id="ajaxContent"></div>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+
+    <script>
+        console.log($('h1').html('Test'));
+        console.log(document.getElementsByTagName("h1")[0].innerHTML);
+
+        $('.green');
+        document.getElementsByClassName("green");
+
+        $('#id');
+        document.getElementById('id');
+
+        $.ajax({
+            url: "index.html",
+            data: {  
+            },
+            success: function( result ) {
+                console.log(result);
+                $('#ajaxContent').html(result);
+            }})
+    
+    </script>
+</body>
+</html>

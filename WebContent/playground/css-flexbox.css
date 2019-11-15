@@ -1,0 +1,15 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*flex-flow: row wrap; */
+    justify-content: space-between;
+    align-content: space-between;
+    background-color:lightgray;
+}
+
+.flex-item {
+    height: 200px;
+    width: 200px;
+    background-color: indigo;
+}
