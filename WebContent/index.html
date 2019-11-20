@@ -10,9 +10,11 @@
             <div class="grid-item leftMenu">2</div>
             <div class="grid-item flex-container content">
                 <div class="flex-item">
+                    <form id ="from">
                     Message:
                     <input id="message" type="text">
                     <button id="send">Send</button>
+                    </form>
 
 
                 </div>
@@ -37,6 +39,11 @@
             <script>
 
             $(document).ready( function() {
+
+                document.getElementById("from").addEventListener("click", function(event){
+                    event.preventDefault();
+                });
+
                 $('#send').on("click", function() {
                     $.post(
                     '/wwi118/hello-world',
